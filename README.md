@@ -1,3 +1,3 @@
 # experiment_.bats
-experimental bats
-IT'S A EXPERIMIMENT BAT FILES.You need it!
+I created batch files for experiment.
+If you want to learn how to write batch files, it's for you!
