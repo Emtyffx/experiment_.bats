@@ -12,6 +12,7 @@ goto start
 :view
 set /p name="Filename: "
 type %name%
+goto start
 :write
 set /p name-delete="Filename: "
 notepad %name-delete%
@@ -36,29 +37,29 @@ goto start
 cls
 set choose==67
 title Z File Manager
-echo ' ______________________'
-echo '[___________________  ]'
-echo '                   / /'
-echo '                  / /'
-echo '                 / /'
-echo '                / /'
-echo '               / /'
-echo '              / /'
-echo '             / /'
-echo '            / /'
-echo '           / /'
-echo '          / /'
-echo '         / /'
-echo '        / /'
-echo '       / /'
-echo '      / /'
-echo '     / /'
-echo '    / /'
-echo '   / /'
-echo '  / /'
-echo ' / /'
-echo '/ /__________________'
-echo [____________________]'
+echo  ______________________
+echo [___________________  ]
+echo                    / /
+echo                   / /
+echo                  / /
+echo                 / /
+echo                / /
+echo               / /
+echo              / /
+echo             / /
+echo            / /
+echo           / /
+echo          / /
+echo         / /
+echo        / /
+echo       / /
+echo      / /
+echo     / /
+echo    / /
+echo   / /
+echo  / /
+echo / /__________________
+echo [____________________]
 echo 1.Create new file
 echo 2.Delete file
 echo 3.Write in a file 
