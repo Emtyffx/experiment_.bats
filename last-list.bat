@@ -13,7 +13,8 @@ if %command%==create-lens-list-lixicon goto create-lens-list-lixicon
 goto start
 :create-lens-list
 set /p type1="Lens list type1:  "
-E:
+set /p disk="Disk Letter: "
+%disk%:
 if NOT EXIST DristLensList mkdir DristLensList
 cd E:\DristLensList
 set /p type2="Lens list type2:  "
