@@ -12,6 +12,7 @@ goto start
 :view
 set /p name="Filename: "
 type %name%
+timeout 60
 goto start
 :write
 set /p name-delete="Filename: "
@@ -32,6 +33,14 @@ goto start
 :rd
 set /p dirname="Folder name2: "
 rd %dirname%
+goto start
+:ls
+dir
+timeout 60
+goto start
+:wd
+cd
+timeout 60
 goto start
 :start
 cls
@@ -68,6 +77,8 @@ echo 5.Directory
 echo 6.Disk
 echo 7.Create a folder
 echo 8.Delete a folder
+echo 9.List files
+echo 10.Watch directory
 set /p choose="Choose: "
 if %choose%==1 goto create
 if %choose%==2 goto delete
@@ -77,5 +88,9 @@ if %choose%==5 goto directory
 if %choose%==6 goto disk
 if %choose%==7 goto mkdir
 if %choose%==8 goto rd
+if %choose%==9 goto ls
+if %choose%==10 goto wd
+goto start
+
 
 
