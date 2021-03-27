@@ -41,9 +41,10 @@ echo lens-start >> %name%.ll
 goto start
 :create-lens-list-lixicon
 set /p type1="Lens list type1:  "
-E:
+set /p disk="Disk Letter: "
+%disk%:
 if NOT EXIST DristLensList mkdir DristLensList
-cd E:\DristLensList
+cd DristLensList
 set /p type2="Lens list type2:  "
 set /p name="Lens-list name:  "
 type NUL > %name%.ll
